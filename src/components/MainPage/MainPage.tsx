@@ -5,6 +5,7 @@ import SettingsPage from "../SettingsPage/SettingsPage";
 import MessagesPage from "../MessagePage/MessagesPage";
 import {ContentBlock, MainPageStyled, NavBarBlock} from "./MainPageStyled";
 import NavBar from "./NavBar/NavBar";
+import {Route, Routes} from "react-router-dom";
 
 const MainPage = () => {
     return (
@@ -13,15 +14,17 @@ const MainPage = () => {
                 <NavBar/>
             </NavBarBlock>
             <ContentBlock>
-                <LogInPage/>
-                <ProfilePage/>
-                <SettingsPage/>
-                <MessagesPage/>
+                <Routes>
+                    <Route path="/Profile" element={<ProfilePage/>}/>
+                    <Route path="/Settings" element={<SettingsPage/>}/>
+                    <Route path="/Messages" element={<MessagesPage/>}/>
+                    <Route path="/LogIn" element={<LogInPage/>}/>
+                </Routes>
             </ContentBlock>
         </MainPageStyled>
+
     );
 };
-
 
 
 export default MainPage;

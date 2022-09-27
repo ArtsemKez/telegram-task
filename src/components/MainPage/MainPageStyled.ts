@@ -5,6 +5,7 @@ export const MainPageStyled = styled.div`
   background: #6c6666;
   width: 80%;
   height: 100%;
+  max-height: calc(100vh - 50px);
   margin-top: 50px;
   margin-inline: auto;
 `
@@ -14,5 +15,5 @@ export const NavBarBlock = styled.nav`
 `
 
 export const ContentBlock = styled.div`
-  flex-grow: 4.5;
+  flex-grow: 10;
 `
