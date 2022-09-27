@@ -1,14 +1,13 @@
 import React from 'react';
-import {NavBarStyled} from "./NavBarStyled";
-import {Link} from "react-router-dom";
+import { LinkStyled, NavBarStyled} from "./NavBarStyled";
 
 const NavBar = () => {
     return (
         <NavBarStyled>
-            <Link to="/Profile">Profile</Link>
-            <Link to="/Messages">Messages</Link>
-            <Link to="/login">LogIn</Link>
-            <Link to="/Settings">Settings</Link>
+            <LinkStyled to="/Profile">Profile</LinkStyled>
+            <LinkStyled to="/Messages">Messages</LinkStyled>
+            <LinkStyled to="/login">LogIn</LinkStyled>
+            <LinkStyled to="/Settings">Settings</LinkStyled>
         </NavBarStyled>
     );
 };

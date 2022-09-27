@@ -11,9 +11,9 @@ export const MainPageStyled = styled.div`
 `
 
 export const NavBarBlock = styled.nav`
-  flex-grow: 1;
+  width: 250px;
 `
 
 export const ContentBlock = styled.div`
-  flex-grow: 10;
+  width: 100%;
 `
